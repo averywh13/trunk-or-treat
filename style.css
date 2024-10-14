@@ -1,6 +1,311 @@
-body{
-    background-color: black;
-    background-image: url('imgs/borderpic1.jpg');
-    background-repeat:no-repeat;
+body {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-image: url('imgs/spookywallpaper1.jpeg');
+    background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 1000px;
+    background-color: white;
 }
+
+#container {
+    width: 400px;
+    height: 400px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+#spooky {
+    margin: 10% auto;
+    width: 80%;
+    height: 80%;
+    animation: floaty 2s infinite;
+    margin-left: 150px;
+}
+
+#spooky #body {
+    position: relative;
+    margin: 50px auto 0;
+    width: 180px;
+    height: 220px;
+    background: #f2fbf1;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+}
+
+#spooky #body:before,
+#spooky #body:after {
+    content: '';
+    position: absolute;
+    top: 130px;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #f2fbf1;
+    animation: floaty .2s infinite;
+}
+
+#spooky #body:before {
+    left: -18px;
+}
+
+#spooky #body:after {
+    right: -18px;
+}
+
+#spooky #body #eyes {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 90px 0 0;
+    width: 90px;
+    height: 20px;
+}
+
+#spooky #body #eyes:before,
+#spooky #body #eyes:after {
+    content: ' ';
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: #000000;
+    border-radius: 50%;
+}
+
+#spooky #body #mouth {
+    background: #000000;
+    margin: 25px auto 0;
+    width: 60px;
+    height: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+#spooky #body #mouth:before {
+    content: ' ';
+    display: block;
+    background: #000000;
+    margin-left: 20px;
+    width: 10px;
+    height: 10px;
+}
+
+#spooky #body #feet {
+    position: absolute;
+    display: flex;
+    bottom: -18px;
+    width: 180px;
+    height: 36px;
+}
+
+#spooky #body #feet > *,
+#spooky #body #feet::before,
+#spooky #body #feet::after {
+    content: ' ';
+    width: 36px;
+    height: 36px;
+    background: #f2fbf1;
+    border-radius: 50%;
+}
+
+#shadow {
+    margin: -90px auto 0;
+    background: #d0d0d0
+    ;
+    width: 180px;
+    height: 40px;
+    border-radius: 50%;
+    animation: zoomy 2s infinite;
+    margin-left:220px;
+    opacity: 0.5
+}
+
+@keyframes floaty {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes zoomy {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.8);
+    }
+}
+html:hover .spider {
+    top: -120%;
+}
+h1{
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+  -webkit-text-fill-color: rgb(0, 0, 0);
+  -webkit-text-stroke: 3px rgb(255, 255, 255);
+}
+
+
+
+
+
+#container2 {
+    width: 400px;
+    height: 400px;
+    padding: 0;
+    box-sizing: border-box;
+    margin-right: 100px;
+}
+
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+#spooky2 {
+    margin: 10% auto;
+    width: 80%;
+    height: 80%;
+    animation: floaty 2s infinite;
+    margin-right: 90px;
+}
+
+#spooky2 #body2 {
+    position: relative;
+    margin: 50px auto 0;
+    width: 180px;
+    height: 220px;
+    background: #f2fbf1;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+}
+
+#spooky2 #body2:before,
+#spooky2 #body2:after {
+    content: '';
+    position: absolute;
+    top: 130px;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #f2fbf1;
+    animation: floaty .2s infinite;
+}
+
+#spooky2 #body2:before {
+    left: -18px;
+}
+
+#spooky2 #body2:after {
+    right: -18px;
+}
+
+#spooky2 #body2 #eyes2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 90px 0 0;
+    width: 90px;
+    height: 20px;
+}
+
+#spooky2 #body2 #eyes2:before,
+#spooky2 #body2 #eyes2:after {
+    content: ' ';
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: #000000;
+    border-radius: 50%;
+}
+
+#spooky2 #body2 #mouth2 {
+    background: #000000;
+    margin: 25px auto 0;
+    width: 60px;
+    height: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+#spooky2 #body2 #mouth2:before {
+    content: ' ';
+    display: block;
+    background: #000000;
+    margin-left: 20px;
+    width: 10px;
+    height: 10px;
+}
+
+#spooky2 #body2 #feet2 {
+    position: absolute;
+    display: flex;
+    bottom: -18px;
+    width: 180px;
+    height: 36px;
+}
+
+#spooky2 #body2 #feet2 > *,
+#spooky2 #body2 #feet2::before,
+#spooky2 #body2 #feet2::after {
+    content: ' ';
+    width: 36px;
+    height: 36px;
+    background: #f2fbf1;
+    border-radius: 50%;
+}
+
+#shadow2 {
+    margin: -90px auto 0;
+    background: #8f8f8f
+    ;
+    width: 180px;
+    height: 40px;
+    border-radius: 50%;
+    animation: zoomy 2s infinite;
+    margin-right: 110px;
+    opacity: 0.5;
+
+}
+
+@keyframes floaty {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes zoomy {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.8);
+    }
+}
+html:hover .spider {
+    top: -120%;
+}
+
