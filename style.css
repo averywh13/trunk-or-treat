@@ -54,5 +54,56 @@ h5{
     flex: 1;                       
     max-width: 1200px;             
     text-align: center;
-    margin: 0 10px;           
+    margin: 0 10px;   
+            
+}.titletext h1 {
+    color: orange;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.pumpkin-card {
+    position: relative;
+    text-align: center;
+}
+
+.pumpkin-card img {
+    width: 400px;
+    height: 400px;
+    transition: transform 0.3s ease-in-out;
+    display: block;
+    margin: 0 auto;
+}
+
+.pumpkin-card:hover img {
+    transform: scale(1.1);
+}
+
+.pumpkin-card h5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: orange;
+    text-shadow: 2px 2px 10px #ff7f00;
+    margin: 0;
+}
+
+.pumpkin-card:hover h5 {
+    color: #ff9900;
+    text-shadow: 2px 2px 20px #ffcc00;
+}
+
+p{
+    font-family: "Staatliches", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 3rem;
+    -webkit-text-fill-color: rgb(196, 75, 0);
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+}
+.btn{
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
 }
